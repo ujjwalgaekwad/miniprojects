@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ramabhadra&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px 20px 0px 20px;
+    font-family: 'poppins';
+}
+
+:root {
+    --bg-color: #191f36;
+    --snd-color: #262840;
+    --text-color: #fff;
+    --main-color: #5982f4;
+}
+
+.navbar {
+    height: 60px;
+    background-color: var(--snd-color);
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-color);
+}
+
+.logo {
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.navs {
+    padding: 14px;
+}
+
+.navs #navs {
+    font-size: 1.1rem;
+    font-weight: 800;
+    text-decoration: none;
+    margin: 30px;
+    color: var(--text-color);
+}
+
+.btn {
+    padding: 7px 17px;
+    margin: 10px;
+    background-color: transparent;
+    border-radius: 4px;
+}
+
+#btn1 {
+    background-color: #5982f4;
+}
+
+#btn1:hover {
+    background-color: #a3b5e8;
+}
+
+#btn2 {
+    background-color: #7d7473;
+}
+
+#navs:hover {
+    text-decoration-line: underline;
+    color: #dbd3d3;
+}
+
+/* hero-section */
+
+.header-section {
+    display: flex;
+    gap: 60px;
+}
+
+.hero-left {
+    
+    margin-top:120px;
+}
+p {
+    font-size: 22px;
+}
+
+.hero-left h1 {
+    margin-top: 50px;
+    font-size: 45px;
+    color:#5982f4;
+    gap: 10px;
+}
+
+.hero-left a {
+    background-color:#191f36;
+}
+
+/* languages */
+
+.about-skill {
+    text-align: center;
+    font-size: 33px;
+    border: 1px solid black;
+    border-radius: 8px;
+
+}
+
+.languages-icons {
+    margin-top: 30px; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 100px;
+}
