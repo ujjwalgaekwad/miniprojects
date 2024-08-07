@@ -1,1 +1,2 @@
-# js_project_1
+
+Building small projects is a way to improve skills.
