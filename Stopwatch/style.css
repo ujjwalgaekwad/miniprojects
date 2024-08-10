@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(joanna-kosinska-1_CMoFsPfso-unsplash.jpg);
+    background-size: cover;
+}
+h1 {
+    font-size: 40px;
+}
+.watch {
+    height: 200px;
+    width: 20%;
+    margin:200px 0px 0px 550px;
+    border: 2px solid #0c0e10;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+.icons {
+    margin: 20px;
+    background: transparent;
+    font-size: 25px;
+}
