@@ -1,5 +1,7 @@
 let chooses = document.querySelectorAll(".icon");
-let message = document.querySelector("#msg");
+let message = document.getElementById("msg");
+let myScoreDisplay = document.getElementById("myScore");
+let computerScoreDisplay = document.getElementById("computerScore");
 
 let myScore = 0;
 let computerScore = 0;
@@ -33,10 +35,13 @@ const gamePlay = (myChoice) => {
 
 const showWinner = (myWin) => {
     if(myWin){
-        console.log("I am Win!")
+        myScore++;
+        myScoreDisplay.innerText = myScore;
         message.innerText ="I am winner!";
         message.style.backgroundColor = "green";
     }else {
+        computerScore++;
+        computerScoreDisplay.innerText = computerScore;
         console.log("I am lose.");
         message.innerText ="I am loser";
         message.style.backgroundColor = "red";
