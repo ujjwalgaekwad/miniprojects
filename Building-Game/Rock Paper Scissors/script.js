@@ -1,4 +1,6 @@
 let chooses = document.querySelectorAll(".icon");
+let message = document.querySelector("#msg");
+
 let myScore = 0;
 let computerScore = 0;
 
@@ -16,15 +18,29 @@ const gamePlay = (myChoice) => {
     console.log("Computer Choice", computerChoi);
     if(myChoice === computerChoi) {
         drawGame();
-    }else {
-       let mywon = true;
+    } else {
+       let myWin = true;
        if(myChoice === "paper") {
-           computerChoi === "scissors" ? true: false;
+           myWin = computerChoi === "scissors" ? true: false;
        } else if (myChoice === "rock"){
-           computerChoi ==="paper" ? true: false;
-       } 
+           myWin = computerChoi ==="paper" ? false: true;
+       } else {
+          myWin = computerChoi === "rock" ? true: false;
+       }
+       showWinner(myWin);
+    }   
+}
+
+const showWinner = (myWin) => {
+    if(myWin){
+        console.log("I am Win!")
+        message.innerText ="I am winner!";
+        message.style.backgroundColor = "green";
+    }else {
+        console.log("I am lose.");
+        message.innerText ="I am loser";
+        message.style.backgroundColor = "red";
     }
-      
 }
 
 const computerChoice = () => {
@@ -35,5 +51,7 @@ const computerChoice = () => {
 
 const drawGame = () => {
     console.log("Game is draw."); 
+    message.innerText = "Game Draw, let's play!";
+    message.style.backgroundColor = "brown";
 }
     
