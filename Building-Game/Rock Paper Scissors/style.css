@@ -43,12 +43,14 @@ h1 {
     gap: 5rem;
 }
 
-.message{
-    margin: 70px 0px 0px 450px;
-    height: 30px;
-    width: 40%;
-    font-size: 20px;
+.message {
+    margin-top: 5rem;
     text-align: center;
-    border:1px solid white;
-    border-radius: 3px;
+}
+#msg {
+    display: inline;
+    font-size: 1.6rem;
+    border: 1px solid white;
+    padding: 1rem;
+    border-radius: 0.5rem;
 }
